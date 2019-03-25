@@ -1,3 +1,6 @@
+#ifndef VEC3_H
+#define VEC3_H
+
 #include <math.h>
 #include <stdlib.h>
 #include <iostream>
@@ -153,3 +156,5 @@ inline vec3& vec3::operator/=(const float t) {
 inline vec3 make_unit_vector(vec3 v) {
 	return v / v.length();
 }
+
+#endif // VEC3_H
